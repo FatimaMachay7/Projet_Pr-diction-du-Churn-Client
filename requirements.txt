@@ -2,4 +2,8 @@ pandas
 numpy
 scikit-learn
 matplotlib
+<<<<<<< HEAD
 seaborn
+=======
+seaborn
+>>>>>>> test/performance
