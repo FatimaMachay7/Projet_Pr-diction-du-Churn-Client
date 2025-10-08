@@ -77,3 +77,47 @@ aussi
 pandas
 
 scikit-learn
+<!-- La matrice de correlation -->
+Interprétation
+
+tenure (-0.35) → corrélation négative modérée
+→ Plus un client reste longtemps (tenure élevé), moins il y a de chance qu’il résilie (churn = 1).
+C’est un facteur protecteur : la fidélité réduit le churn.
+
+TotalCharges (-0.20) → légère corrélation négative
+→ Plus un client a dépensé beaucoup, moins il quitte le service.
+
+MonthlyCharges (+0.19) → légère corrélation positive
+→ Plus le coût mensuel est élevé, plus la probabilité de churn augmente.
+(Les clients paient plus → peuvent être insatisfaits ou partir.)
+
+SeniorCitizen (+0.15) → légère corrélation positive
+→ Les clients âgés semblent un peu plus susceptibles de partir.
+Les variables les plus corrélées avec le churn sont :
+
+*tenure (-0.35) – plus fort lien*
+
+*TotalCharges (-0.20)*
+
+*MonthlyCharges (+0.19)*
+
+*SeniorCitizen (+0.15)*
+
+💡 Conclusion :
+
+Les clients récents, qui paient plus cher, et qui n’ont pas encore accumulé beaucoup de dépenses sont plus susceptibles de résilier.
+Les anciens clients, eux, ont tendance à rester.
+pipeline : phase : importation des bibliotheque
+
+
+la phase des scores_ 
+leur interpretation 
+#  Scores de base
+| Score         | Valeur   | Interprétation                                                  |
+| ------------- | -------- | --------------------------------------------------------------- |
+| **Accuracy**  | `0.7821` | 🟢 *Correct (78% de bonnes prédictions)*                        |
+| **Recall**    | `0.4638` | 🔴 *Mauvais : le modèle détecte mal les clients qui churnent*   |
+| **Precision** | `0.6179` | 🟠 *Pas mal : quand il prédit churn, il se trompe 38% du temps* |
+| **F1 Score**  | `0.5299` | 🔴 *Faible : compromis entre précision et rappel pas très bon*  |
+
+
