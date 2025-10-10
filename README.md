@@ -3,14 +3,14 @@
 ### *Auteur :*__MACHAY Fatima__
 ### *Date :* __2025-10-06__
 ### *Objectif :*
-<p style="text-align: justify;">
+
 Développer un pipeline complet de Machine Learning supervisé permettant de prédire le désabonnement des clients (churn) au sein d’une entreprise de télécommunications, dans le but de mieux cibler les actions de fidélisation et de réduire la perte de clientèle. Parallèlement, analyser et explorer les données clients afin d’identifier les facteurs clés qui influencent le risque de désabonnement.
-</p>
+
 
 ## Présentation du Projet :
-<p style="text-align: justify;">
+
 L'objectif de ce projet est de prédire le churn des clients dans une entreprise de télécommunications, en utilisant des techniques d'apprentissage automatique. Le but principal est de construire un modèle prédictif capable de déterminer si un client va se désabonner (churner) en fonction de ses attributs. Ce projet utilise plusieurs algorithmes de classification et évalue la performance des modèles avec des métriques telles que la précision, le recall, le F1-score et l'AUC (Area Under the Curve).
-</p>
+
 
 ## 📑 Table des matières :
 
@@ -137,9 +137,9 @@ Chaque modèle est évalué sur des métriques telles que :
 __Décision basée sur la comparaison des modèles :__
 
 Après évaluation des trois modèles __(Random Forest, Régression Logistique, SVC)__ sur des métriques clés, voici les résultats :
-- __Régression Logistique__ excelle en rappel (0.8284), idéale pour identifier les churners (minimiser les faux négatifs).
-- __SVC__ se distingue par la meilleure ROC-AUC (0.84), offrant une bonne discrimination entre churn et non-churn.
-- __Random Forest__ a la meilleure accuracy (0.7828), mais un rappel plus faible (0.4665), ce qui en fait un modèle équilibré pour des prédictions globales.
+- *Régression Logistique* excelle en rappel (0.8284), idéale pour identifier les churners (minimiser les faux négatifs).
+- *SVC* se distingue par la meilleure ROC-AUC (0.84), offrant une bonne discrimination entre churn et non-churn.
+- *Random Forest* a la meilleure accuracy (0.7828), mais un rappel plus faible (0.4665), ce qui en fait un modèle équilibré pour des prédictions globales.
 
 Le meilleur modèle que j'ai choisi est la *Régression Logistique*, car elle offre le meilleur compromis entre rappel et F1-Score, ce qui est crucial pour ce projet.
 
