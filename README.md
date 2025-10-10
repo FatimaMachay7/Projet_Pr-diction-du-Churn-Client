@@ -96,12 +96,13 @@ Les statistiques descriptives des variables principales sont fournies ci-dessous
 | **75%**         | 0.000000      | 55.000000  | 89.850000      |
 | **max**         | 1.000000      | 72.000000  | 118.750000     |
 
+
 L'Exploration des Données (EDA) inclut l’analyse des distributions et des relations entre variables, ainsi que des *visualisations* pour mieux comprendre les données. Les *histogrammes* sont utilisés pour les variables numériques, tandis que les *countplots* sont privilégiés pour les variables catégorielles. Les *subplots* permettent de comparer plusieurs visualisations simultanément. Ces outils permettent d’identifier des patterns, des anomalies et d'analyser les variables avant l'entraînement du modèle.
 
 Voici un graphique montrant l'évolution du churn des clients :
 
 __Histogramme de la variable *Tenure* :__
-![Graphique du tenure](Graphes_EDA/histogramme_tenure.png)
+[Graphique du tenure](C:\Users\Latitude\Desktop\Projet_Pr-diction-du-Churn-Client\Graphes_EDA\histogramme_tenure.png)
 
 __Histogramme de la  variable *MonthlyCharges* :__
 ![Graphique du MonthlyCharges](Graphes_EDA/histogramme_MonthlyCharges.png)
