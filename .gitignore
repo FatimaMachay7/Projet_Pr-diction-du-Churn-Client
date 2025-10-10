@@ -1,5 +1,4 @@
-env_churn/
-
-
-
-
+__pycache__
+env_churn
+__pycache__
+*
