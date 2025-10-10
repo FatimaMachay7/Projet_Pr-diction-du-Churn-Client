@@ -148,11 +148,11 @@ Le meilleur modèle que j'ai choisi est la *Régression Logistique*, car elle of
 - Ouvrez le fichier Data_Churn.ipynb et exécutez les cellules dans l’ordre.
 - Le notebook entraînera les trois modèles : Régression Logistique, Random Forest et SVC.
 - Le notebook effectuera les étapes suivantes :
-*Chargement des données;*
-*Prétraitement des données;*
-*Entraînement de chaque modèle;*
-*Évaluation de la performance de chaque modèle;*
-*Tracé des courbes pour la comparaison.*
+- Chargement des données;
+- Prétraitement des données;
+- Entraînement de chaque modèle;
+- Évaluation de la performance de chaque modèle;
+- Tracé des courbes pour la comparaison.
 
 ## Tests :
 
