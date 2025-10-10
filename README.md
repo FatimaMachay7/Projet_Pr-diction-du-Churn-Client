@@ -73,16 +73,15 @@ Les données sont disponibles ici :
 
 ## Prétraitement des Données :
 
-
-*EDA — Exploration des Données (Données clients et Churn) :*
+__EDA — Exploration des Données (Données clients et Churn) :__
 
 L'Exploration des Données (EDA) est une étape essentielle pour analyser la distribution des variables et leurs interactions. Elle permet de mieux identifier les facteurs clés qui influencent le churn des clients. Cette analyse détaillée a été réalisée à l’aide d’un *notebook Jupyter*, offrant un aperçu complet du dataset.
 
-*Analyse Descriptive des Données :* 
+__Analyse Descriptive des Données :__
 
 Les statistiques descriptives des variables principales sont fournies ci-dessous :
 
-------------------------->`data.describe()`<--------------------------------------------------
+----------------------------->`data.describe()`<-------------------------------------------------------
 
 
 | Feature         | SeniorCitizen | tenure     | MonthlyCharges |
@@ -97,34 +96,26 @@ Les statistiques descriptives des variables principales sont fournies ci-dessous
 | **max**         | 1.000000      | 72.000000  | 118.750000     |
 
 
-L'Exploration des Données (EDA) inclut l’analyse des distributions et des relations entre variables, ainsi que des *visualisations* pour mieux comprendre les données. Les *histogrammes* sont utilisés pour les variables numériques, tandis que les *countplots* sont privilégiés pour les variables catégorielles. Les *subplots* permettent de comparer plusieurs visualisations simultanément. Ces outils permettent d’identifier des patterns, des anomalies et d'analyser les variables avant l'entraînement du modèle.
+L'Exploration des Données (EDA) inclut l’analyse des distributions et des relations entre variables, ainsi que des *visualisations* pour mieux comprendre les données. Les *histogrammes* sont utilisés pour les variables numériques, tandis que les *countplots* sont privilégiés pour les variables catégorielles. Les *subplots* permettent de comparer plusieurs visualisations simultanément. Ces outils permettent d’identifier des patterns, des anomalies et d'analyser les variables avant l'entraînement du modèle. Voici un graphique montrant l'évolution du churn des clients :
 
-Voici un graphique montrant l'évolution du churn des clients :
+__Histogramme de la variable *Tenure* :__ ![Graphique du tenure](Graphes_EDA/histogramme_tenure.png)
 
-__Histogramme de la variable *Tenure* :__
-[Graphique du tenure](C:\Users\Latitude\Desktop\Projet_Pr-diction-du-Churn-Client\Graphes_EDA\histogramme_tenure.png)
+__Histogramme de la  variable *MonthlyCharges* :__ ![Graphique du MonthlyCharges](Graphes_EDA/histogramme_MonthlyCharges.png)
 
-__Histogramme de la  variable *MonthlyCharges* :__
-![Graphique du MonthlyCharges](Graphes_EDA/histogramme_MonthlyCharges.png)
+__Subplot comparant *les variables catégorielles :*__ ![Subplot comparant les variables catégorielles](Graphes_EDA/count_polt.png)
 
-__Subplot comparant *les variables catégorielles :*__
+__📈 Matrice de corrélation : compréhension des liens entre les variables :__![La matrice de corrélation](Graphes_EDA/matrice_correlation.png)
 
-![Subplot comparant les variables catégorielles](Graphes_EDA/count_polt.png)
-
-__📈 Matrice de corrélation : compréhension des liens entre les variables :__
-
-![La matrice de corrélation](Graphes_EDA/matrice_correlation.png)
-
-*Relations entre les Variables  :*
+__Relations entre les Variables  :__
 
 L'Analyse Exploratoire des Données (EDA) permet d'étudier les relations entre les variables et de préparer les données pour les modèles de machine learning. Les données ont été chargées à l'aide de Pandas, et la variable cible sélectionnée est churn. Les variables gender, seniorCitizen, partner, et customerID ont été exclues en raison de leur faible influence sur la prédiction du churn. L'encodage des variables catégorielles, ainsi que de churn et TotalCharges, a été effectué à l'aide de Label Encoding afin de rendre ces données compatibles avec les modèles de machine learning.
 
 Interprétation de la matrice de corrélation : La matrice révèle des relations significatives entre certaines variables, telles que la corrélation entre charges mensuelles et tenure, ce qui permet de mieux orienter la sélection des features.
 
 
-*Séparation Train-Test :* Le jeu de données est divisé en un ensemble d’entraînement et un ensemble de test avec train_test_split.
+__Séparation Train-Test :__ Le jeu de données est divisé en un ensemble d’entraînement et un ensemble de test avec train_test_split.
 
-*Normalisation des Données :* Après la séparation des données en ensembles d'entraînement et de test, nous appliquons une normalisation pour uniformiser l'échelle des caractéristiques. Cela est fait avec MinMaxScaler de sklearn, qui redimensionne les valeurs des variables dans un intervalle spécifié, généralement entre [0, 1]. Cette étape garantit que toutes les caractéristiques sont sur une échelle comparable.
+__Normalisation des Données :__ Après la séparation des données en ensembles d'entraînement et de test, nous appliquons une normalisation pour uniformiser l'échelle des caractéristiques. Cela est fait avec MinMaxScaler de sklearn, qui redimensionne les valeurs des variables dans un intervalle spécifié, généralement entre [0, 1]. Cette étape garantit que toutes les caractéristiques sont sur une échelle comparable.
 
 
 ## Modélisation :
@@ -145,26 +136,23 @@ Chaque modèle est évalué sur des métriques telles que :
 - F1-Score;
 - ROC- curve.
 
-*Décision basée sur la comparaison des modèles :*
+__Décision basée sur la comparaison des modèles :__
 
-Après évaluation des trois modèles (*Random Forest, Régression Logistique, SVC*) sur des métriques clés, voici les résultats :
+Après évaluation des trois modèles __(Random Forest, Régression Logistique, SVC)__ sur des métriques clés, voici les résultats :
 
-*Régression Logistique* excelle en rappel (0.8284), idéale pour identifier les churners (minimiser les faux négatifs).
+- __Régression Logistique__ excelle en rappel (0.8284), idéale pour identifier les churners (minimiser les faux négatifs).
+- __SVC__ se distingue par la meilleure ROC-AUC (0.84), offrant une bonne discrimination entre churn et non-churn.
 
-*SVC* se distingue par la meilleure ROC-AUC (0.84), offrant une bonne discrimination entre churn et non-churn.
-
-*Random Forest* a la meilleure accuracy (0.7828), mais un rappel plus faible (0.4665), ce qui en fait un modèle équilibré pour des prédictions globales.
+- __Random Forest__ a la meilleure accuracy (0.7828), mais un rappel plus faible (0.4665), ce qui en fait un modèle équilibré pour des prédictions globales.
 
 Le meilleur modèle que j'ai choisi est la *Régression Logistique*, car elle offre le meilleur compromis entre rappel et F1-Score, ce qui est crucial pour ce projet.
 
 ## Exécution du Projet :
 
-
 - Ouvrez le fichier Data_Churn.ipynb et exécutez les cellules dans l’ordre.
-
 - Le notebook entraînera les trois modèles : Régression Logistique, Random Forest et SVC.
-
 - Le notebook effectuera les étapes suivantes :
+
 *Chargement des données;*
 *Prétraitement des données;*
 *Entraînement de chaque modèle;*
@@ -178,9 +166,9 @@ Le projet inclut des tests unitaires pour vérifier :
 - La cohérence des dimensions entre les variables d’entraînement et de test;
 - L’évaluation correcte des modèles.
 
-_Pour exécuter les tests :_
+*Pour exécuter les tests :*
 
-*pytest*
+__pytest__
 
 Cela exécutera tous les tests dans le répertoire tests/.
 
