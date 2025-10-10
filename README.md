@@ -1,6 +1,6 @@
 # EDA — Prédiction du Churn Client (désabonnement) – Projet Data Science 
 
-### *Auteur :*__MACHAY Fatima__
+### *Auteur : *__MACHAY Fatima__
 ### *Date :* __2025-10-06__
 ### *Objectif :*
 
