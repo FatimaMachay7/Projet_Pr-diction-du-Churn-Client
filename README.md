@@ -1,7 +1,8 @@
 # *EDA — Prédiction du Churn Client (désabonnement) – Projet Data Science *
 ### *Auteur :*__MACHAY Fatima__
 ### *Date :* __2025-10-06__
-### *Objectif :* Développer un pipeline complet de Machine Learning supervisé permettant de prédire le désabonnement des clients (churn) au sein d’une entreprise de télécommunications, dans le but de mieux cibler les actions de fidélisation et de réduire la perte de clientèle. Parallèlement, analyser et explorer les données clients afin d’identifier les facteurs clés qui influencent le risque de désabonnement.
+### *Objectif :*
+Développer un pipeline complet de Machine Learning supervisé permettant de prédire le désabonnement des clients (churn) au sein d’une entreprise de télécommunications, dans le but de mieux cibler les actions de fidélisation et de réduire la perte de clientèle. Parallèlement, analyser et explorer les données clients afin d’identifier les facteurs clés qui influencent le risque de désabonnement.
 
 
 ## Présentation du Projet :
@@ -42,7 +43,7 @@ Pour démarrer avec ce projet, suivez les étapes ci-dessous :
 
 __Clonez le dépôt :__
 
-[git clone](https://github.com/codehass/Customer-Churn-Prediction.git)
+[git clone](https://github.com/FatimaMachay7/Projet_Pr-diction-du-Churn-Client.git)
 
 __Accédez au répertoire du projet :__
       [cd]    Projet_Pr-diction-du-Churn-Client 
