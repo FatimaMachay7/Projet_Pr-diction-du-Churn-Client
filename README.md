@@ -1,7 +1,9 @@
-# *EDA — Prédiction du Churn Client (désabonnement) – Projet Data Science *
+# EDA — Prédiction du Churn Client (désabonnement) – Projet Data Science 
+
 ### *Auteur :*__MACHAY Fatima__
 ### *Date :* __2025-10-06__
 ### *Objectif :*
+
 Développer un pipeline complet de Machine Learning supervisé permettant de prédire le désabonnement des clients (churn) au sein d’une entreprise de télécommunications, dans le but de mieux cibler les actions de fidélisation et de réduire la perte de clientèle. Parallèlement, analyser et explorer les données clients afin d’identifier les facteurs clés qui influencent le risque de désabonnement.
 
 
@@ -52,13 +54,13 @@ __Accédez au répertoire du projet :__
 
 2. Installez les dépendances avec la commande `pip install -r requirements.txt`.
 3. Installez manuellement les dépendances suivantes :
-
-      `pip install pandas`
-      `pip install numpy`
-      `pip install scikit-learn` 
-      `pip install matplotlib` 
-      `pip install seaborn` 
-      `pip install pytest` 
+```bash
+pip install pandas
+pip install numpy
+pip install scikit-learn
+pip install matplotlib
+pip install seaborn
+pip install pytest
 
 
 ## 📁 Données :
