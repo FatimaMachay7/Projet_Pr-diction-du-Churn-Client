@@ -1,6 +1,6 @@
 # EDA — Prédiction du Churn Client (désabonnement) – Projet Data Science 
 
-### *Auteur :*__MACHAY Fatima__
+### *Auteur :* __MACHAY Fatima__
 ### *Date :* __2025-10-06__
 ### *Objectif :*
 
@@ -24,7 +24,7 @@ L'objectif de ce projet est de prédire le churn des clients dans une entreprise
 - [Exécution du projet](#exécution-du-projet)
 - [Tests](#tests)
 - [Contribuer](#contribuer)
-- [Licence](#licence)
+- [Contact](#Contact)
 
 ## Présentation :
 
@@ -175,6 +175,7 @@ Pour contribuer :
 - Effectuez vos modifications.
 - Soumettez une demande de pull.
 
-## Licence :
+## Contact :
 
-_Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus de détails._
+_N'hésitez pas à me contacter en cas de problème ou si vous avez des questions.
+Email : [fatimamachay5@gmail.com]_
