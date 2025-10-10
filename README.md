@@ -3,13 +3,14 @@
 ### *Auteur :*__MACHAY Fatima__
 ### *Date :* __2025-10-06__
 ### *Objectif :*
-
+<p style="text-align: justify;">
 Développer un pipeline complet de Machine Learning supervisé permettant de prédire le désabonnement des clients (churn) au sein d’une entreprise de télécommunications, dans le but de mieux cibler les actions de fidélisation et de réduire la perte de clientèle. Parallèlement, analyser et explorer les données clients afin d’identifier les facteurs clés qui influencent le risque de désabonnement.
-
+</p>
 
 ## Présentation du Projet :
-
+<p style="text-align: justify;">
 L'objectif de ce projet est de prédire le churn des clients dans une entreprise de télécommunications, en utilisant des techniques d'apprentissage automatique. Le but principal est de construire un modèle prédictif capable de déterminer si un client va se désabonner (churner) en fonction de ses attributs. Ce projet utilise plusieurs algorithmes de classification et évalue la performance des modèles avec des métriques telles que la précision, le recall, le F1-score et l'AUC (Area Under the Curve).
+</p>
 
 ## 📑 Table des matières :
 
@@ -48,8 +49,7 @@ __Clonez le dépôt :__
 [git clone](https://github.com/FatimaMachay7/Projet_Pr-diction-du-Churn-Client.git)
 
 __Accédez au répertoire du projet :__
-      [cd]    Projet_Pr-diction-du-Churn-Client 
-
+      [cd]    *Projet_Pr-diction-du-Churn-Client*
 1. Installez les dépendances requises :
 
 2. Installez les dépendances avec la commande `pip install -r requirements.txt`.
@@ -98,13 +98,13 @@ Les statistiques descriptives des variables principales sont fournies ci-dessous
 
 L'Exploration des Données (EDA) inclut l’analyse des distributions et des relations entre variables, ainsi que des *visualisations* pour mieux comprendre les données. Les *histogrammes* sont utilisés pour les variables numériques, tandis que les *countplots* sont privilégiés pour les variables catégorielles. Les *subplots* permettent de comparer plusieurs visualisations simultanément. Ces outils permettent d’identifier des patterns, des anomalies et d'analyser les variables avant l'entraînement du modèle. Voici un graphique montrant l'évolution du churn des clients :
 
-__Histogramme de la variable *Tenure* :__ ![Graphique du tenure](Graphes_EDA/histogramme_tenure.png)
+__1. Histogramme de la variable *Tenure* :__ ![Graphique du tenure](Graphes_EDA/histogramme_tenure.png)
 
-__Histogramme de la  variable *MonthlyCharges* :__ ![Graphique du MonthlyCharges](Graphes_EDA/histogramme_MonthlyCharges.png)
+__2. Histogramme de la  variable *MonthlyCharges* :__ ![Graphique du MonthlyCharges](Graphes_EDA/histogramme_MonthlyCharges.png)
 
-__Subplot comparant *les variables catégorielles :*__ ![Subplot comparant les variables catégorielles](Graphes_EDA/count_polt.png)
+__3. Subplot comparant *les variables catégorielles :*__ ![Subplot comparant les variables catégorielles](Graphes_EDA/count_polt.png)
 
-__📈 Matrice de corrélation : compréhension des liens entre les variables :__![La matrice de corrélation](Graphes_EDA/matrice_correlation.png)
+__4. 📈 Matrice de corrélation : compréhension des liens entre les variables :__![La matrice de corrélation](Graphes_EDA/matrice_correlation.png)
 
 __Relations entre les Variables  :__
 
@@ -121,7 +121,6 @@ __Normalisation des Données :__ Après la séparation des données en ensembles
 ## Modélisation :
 
 Trois modèles sont utilisés pour la prédiction du churn :
-
 - Classificateur Random Forest; 
 - Régression Logistique; 
 - Support Vector Classifier (SVC).
@@ -129,7 +128,6 @@ Trois modèles sont utilisés pour la prédiction du churn :
 ## Entraînement et Évaluation des Modèles :
 
 Chaque modèle est évalué sur des métriques telles que :
-
 - Précision (Accuracy); 
 - Précision (Precision); 
 - Rappel (Recall);
@@ -139,10 +137,8 @@ Chaque modèle est évalué sur des métriques telles que :
 __Décision basée sur la comparaison des modèles :__
 
 Après évaluation des trois modèles __(Random Forest, Régression Logistique, SVC)__ sur des métriques clés, voici les résultats :
-
 - __Régression Logistique__ excelle en rappel (0.8284), idéale pour identifier les churners (minimiser les faux négatifs).
 - __SVC__ se distingue par la meilleure ROC-AUC (0.84), offrant une bonne discrimination entre churn et non-churn.
-
 - __Random Forest__ a la meilleure accuracy (0.7828), mais un rappel plus faible (0.4665), ce qui en fait un modèle équilibré pour des prédictions globales.
 
 Le meilleur modèle que j'ai choisi est la *Régression Logistique*, car elle offre le meilleur compromis entre rappel et F1-Score, ce qui est crucial pour ce projet.
@@ -152,7 +148,6 @@ Le meilleur modèle que j'ai choisi est la *Régression Logistique*, car elle of
 - Ouvrez le fichier Data_Churn.ipynb et exécutez les cellules dans l’ordre.
 - Le notebook entraînera les trois modèles : Régression Logistique, Random Forest et SVC.
 - Le notebook effectuera les étapes suivantes :
-
 *Chargement des données;*
 *Prétraitement des données;*
 *Entraînement de chaque modèle;*
@@ -162,7 +157,6 @@ Le meilleur modèle que j'ai choisi est la *Régression Logistique*, car elle of
 ## Tests :
 
 Le projet inclut des tests unitaires pour vérifier :
-
 - La cohérence des dimensions entre les variables d’entraînement et de test;
 - L’évaluation correcte des modèles.
 
@@ -175,9 +169,7 @@ Cela exécutera tous les tests dans le répertoire tests/.
 ## Contribuer :
 
 Les contributions sont les bienvenues ! Si vous trouvez un bug ou souhaitez améliorer le projet, n’hésitez pas à forker le dépôt et soumettre une demande de pull.
-
 Pour contribuer :
-
 - Forkez le dépôt.
 - Créez une nouvelle branche.
 - Effectuez vos modifications.
