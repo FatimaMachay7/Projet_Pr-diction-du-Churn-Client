@@ -9,7 +9,7 @@ Développer un pipeline complet de Machine Learning supervisé permettant de pr�
 
 ## Présentation du Projet :
 
-      L'objectif de ce projet est de prédire le churn des clients dans une entreprise de télécommunications, en utilisant des techniques d'apprentissage automatique. Le but principal est de construire un modèle prédictif capable de déterminer si un client va se désabonner (churner) en fonction de ses attributs. Ce projet utilise plusieurs algorithmes de classification et évalue la performance des modèles avec des métriques telles que la précision, le recall, le F1-score et l'AUC (Area Under the Curve).
+L'objectif de ce projet est de prédire le churn des clients dans une entreprise de télécommunications, en utilisant des techniques d'apprentissage automatique. Le but principal est de construire un modèle prédictif capable de déterminer si un client va se désabonner (churner) en fonction de ses attributs. Ce projet utilise plusieurs algorithmes de classification et évalue la performance des modèles avec des métriques telles que la précision, le recall, le F1-score et l'AUC (Area Under the Curve).
 
 ## 📑 Table des matières :
 
@@ -54,14 +54,13 @@ __Accédez au répertoire du projet :__
 
 2. Installez les dépendances avec la commande `pip install -r requirements.txt`.
 3. Installez manuellement les dépendances suivantes :
-```bash
+
 pip install pandas
 pip install numpy
 pip install scikit-learn
 pip install matplotlib
 pip install seaborn
 pip install pytest
-
 
 ## 📁 Données :
 
